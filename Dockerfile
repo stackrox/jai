@@ -2,7 +2,7 @@
 
 # Build stage: CGO is required for the mattn/go-sqlite3 driver, and the
 # schema uses FTS5 virtual tables (fts5 build tag).
-FROM golang:1.25-bookworm AS build
+FROM golang:1.27.1-bookworm AS build
 
 WORKDIR /src
 
